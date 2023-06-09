@@ -2,10 +2,11 @@ import { Request, Response } from 'express';
 import prisma from '../prisma';
 
 export const getUsersService = async (req: Request, res: Response) => {
-    {
-        const { query } = req;
+    const { query } = req;
 
+    try {
         if (query.q && typeof query.q === 'string') {
+
             const searchParam = query.q.toLowerCase();
 
             const csvData = await prisma.csvData.findMany({
@@ -24,6 +25,9 @@ export const getUsersService = async (req: Request, res: Response) => {
         const csvData = await prisma.csvData.findMany();
         return res.status(200).json(csvData);
 
-
+    } catch (error) {
+        res.status(500).send('Internal server error');
     }
+
+
 }
