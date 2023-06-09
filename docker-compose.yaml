@@ -1,0 +1,25 @@
+version: "3" 
+services:
+  shawn-api:
+    container_name: shawn-api
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: postgresql://postgres:postgres@postgres:5432/shawn-db
+    entrypoint: ["yarn", "prisma", "migrate", "deploy"] 
+    depends_on:
+      - postgres
+    links:
+      - postgres
+
+  postgres:
+    container_name: postgres
+    image: postgres
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: shawn-db
