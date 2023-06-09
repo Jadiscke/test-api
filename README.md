@@ -41,3 +41,19 @@ With the database set up, run the development server with `yarn dev` or `npm run
 ## Testing
 
 For running the tests just run `yarn test` or `npm run test`
+
+## To-Dos
+
+Here is a list of things I would like to do if I have time:
+
+ - [ ] Add better error handling (use middleware for error handling)
+ - [ ] Create production dockerfile
+ - [ ] Add prettier and eslint
+ - [ ] Create Swagger/OpenAPI documentation
+ - [ ] Add sorting and pagination
+
+## Contributors
+
+Vinícius Jadiscke de Souza Tasso - [GitHub](https://github.com/jadiscke)
+
+vjtasso@gmail.com
