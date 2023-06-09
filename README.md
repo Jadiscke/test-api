@@ -3,11 +3,13 @@
 ## Introduction
 
 The backend should be implemented as a RESTful API using Node. (Try not to use an opinionated framework such as Adonis or Nest).
+
 The backend must include the following endpoints:
-[POST /api/files] An endpoint that accepts a CSV file upload from the frontend and stores the data in a database or a data structure.
-[GET /api/users] Should include an endpoint that allows the frontend to search through the loaded CSV data.
-The search endpoint should accept a ?q= query parameter for search terms and should search through EVERY column of the CSV
-The backend should include appropriate error handling for invalid requests or other errors.
+
+ - [POST /api/files] An endpoint that accepts a CSV file upload from the frontend and stores the data in a database or a data structure.
+ - [GET /api/users] Should include an endpoint that allows the frontend to search through the loaded CSV data.
+ - The search endpoint should accept a ?q= query parameter for search terms and should search through EVERY column of the CSV
+ - The backend should include appropriate error handling for invalid requests or other errors.
 
 ## Requirements
 
