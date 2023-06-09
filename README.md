@@ -42,6 +42,20 @@ With the database set up, run the development server with `yarn dev` or `npm run
 
 For running the tests just run `yarn test` or `npm run test`
 
+### Testing with Insomnia
+
+#### Upload csv data
+1 - Open Insomnia
+2 - Create a request collections
+3 - Create a POST HTTP request for the file upload
+4 - Change the body type to Multipartform
+5 - Name the attribute to file and load the file into the request body
+
+#### Get Users
+1 - Open Insomnia
+2 - Create a GET HTTP request for the users
+3 - Use query params `q` to search in the attributes of a user
+
 ## To-Dos
 
 Here is a list of things I would like to do if I have time:
