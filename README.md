@@ -1,4 +1,4 @@
-# SHAWN TEST API
+# TEST API
 
 ## Introduction
 
